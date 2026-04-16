@@ -7,6 +7,31 @@ Client for [I2C text console][me_I2C_Console] written in Lua for Linux.
 Here is pure Lua 5.5 implementation and command-line scripts to
 scan I2C bus, read from device and write to device.
 
+Code is self-sufficient, no additional Lua modules are required.
+
+## Code
+
+* [Command-line example][Example_Cli]
+* [Lua example][Example_Lua]
+* [Implementation][Implementation]
+
+
+## Requirements
+
+* Hardware
+  * Arduino Uno with `me_I2C_Console` firmware
+  * I2C devices connected to Arduino
+  * USB connection to Arduino
+
+* Software
+  * Linux
+  * `bash`, `stty`, `sleep`
+  * Lua 5.5
+
+## Install/remove
+
+Clone repo / delete directory
+
 
 ## Notes
 
@@ -66,4 +91,17 @@ Sending 1000 bytes and then pausing for 1000 ms is not the same as
 sending 1000 bytes with pause 1 ms after each byte. Small chunks are
 preferred.
 
-[me_I2C_Console]:
+
+## See also
+
+* [`me_I2C_Console`][me_I2C_Console] -- My I2C server firmware for ATmega328
+* [`workshop`][workshop] -- My personal Lua framework
+* [My other projects][Contents]
+
+[Example_Cli]: Test_DS3231.sh
+[Example_Lua]: Read.lua
+[Implementation]: I2C_Client/
+
+[me_I2C_Console]: https://github.com/martin-eden/Embedded-me_I2C_Console
+[workshop]: https://github.com/martin-eden/workshop
+[Contents]: https://github.com/martin-eden/contents
