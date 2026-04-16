@@ -4,8 +4,8 @@
 
 Client for [I2C text console][me_I2C_Console] written in Lua for Linux.
 
-Here is pure Lua 5.5 implementation and command-line scripts to
-scan I2C bus, read from device and write to device.
+Here is command-line Lua scripts to Scan/Read/Write I2C bus.
+And client code in Lua 5.5.
 
 Code is self-sufficient, no additional Lua modules are required.
 
