@@ -97,6 +97,7 @@ preferred.
 ## See also
 
 * [`me_I2C_Console`][me_I2C_Console] -- My I2C server firmware for ATmega328
+* [`DS3231 GUI`][Ds3231_Gui] -- My old frontend project for I2C device
 * [`workshop`][workshop] -- My personal Lua framework
 * [My other projects][Contents]
 
@@ -108,5 +109,6 @@ preferred.
 [Implementation]: I2C_Client/
 
 [me_I2C_Console]: https://github.com/martin-eden/Embedded-me_I2C_Console
+[Ds3231_Gui]: https://github.com/martin-eden/tekui_ds3231
 [workshop]: https://github.com/martin-eden/workshop
 [Contents]: https://github.com/martin-eden/contents
