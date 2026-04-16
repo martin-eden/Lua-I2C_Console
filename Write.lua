@@ -23,12 +23,12 @@ local <const> Teletype = request('!.concepts.StreamIo.Teletype.Interface')
 local <const> PreflightChecks = request('I2C_Client.PreflightChecks')
 local <const> I2C_Write = request('I2C_Client.Write')
 
-local <const> PrintHelp =
+local PrintHelp =
   function()
     print('Usage: <DeviceId> <Bytes+>')
   end
 
-local <const> Write =
+local Write =
   function(IoStreams, DeviceId, DataBytes)
     if is_nil(DeviceId) then
       print('DeviceId is not set')
@@ -46,7 +46,7 @@ local <const> Write =
   end
 
 -- Pack command-line arguments with data
-local <const> GetDataBytes =
+local GetDataBytes =
   function(Args)
     local <const> Result = {}
     for Index = 2, #Args do

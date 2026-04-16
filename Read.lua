@@ -24,12 +24,12 @@ local <const> Teletype = request('!.concepts.StreamIo.Teletype.Interface')
 local <const> PreflightChecks = request('I2C_Client.PreflightChecks')
 local <const> I2C_Read = request('I2C_Client.Read')
 
-local <const> PrintHelp =
+local PrintHelp =
   function()
     print('Usage: <DeviceId> <NumBytes>')
   end
 
-local <const> Read =
+local Read =
   function(IoStreams, DeviceId, DataLength)
     local BadArgs = false
 

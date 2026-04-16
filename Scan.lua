@@ -22,7 +22,7 @@ local <const> Teletype = request('!.concepts.StreamIo.Teletype.Interface')
 local <const> PreflightChecks = request('I2C_Client.PreflightChecks')
 local <const> I2C_Scan = request('I2C_Client.Scan')
 
-local <const> Scan =
+local Scan =
   function(IoStreams)
     if not PreflightChecks(IoStreams) then
       print('We are not compatible with server.')
