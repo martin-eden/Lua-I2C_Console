@@ -9,6 +9,8 @@ And client code in Lua 5.5.
 
 Code is self-sufficient, no additional Lua modules are required.
 
+[![DeepWiki][DeepWiki_Logo]][DeepWiki_Repo]
+
 ## Code
 
 * [Command-line example][Example_Cli]
@@ -97,6 +99,9 @@ preferred.
 * [`me_I2C_Console`][me_I2C_Console] -- My I2C server firmware for ATmega328
 * [`workshop`][workshop] -- My personal Lua framework
 * [My other projects][Contents]
+
+[DeepWiki_Logo]: https://deepwiki.com/badge.svg
+[DeepWiki_Repo]: https://deepwiki.com/martin-eden/Lua-I2C_Console
 
 [Example_Cli]: Test_DS3231.sh
 [Example_Lua]: Read.lua
