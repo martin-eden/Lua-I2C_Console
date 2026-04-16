@@ -1,3 +1,5 @@
+[![DeepWiki][DeepWiki_Logo]][DeepWiki_Repo]
+
 ## What
 
 (2026-04)
@@ -8,8 +10,6 @@ Here is command-line Lua scripts to Scan/Read/Write I2C bus.
 And client code in Lua 5.5.
 
 Code is self-sufficient, no additional Lua modules are required.
-
-[![DeepWiki][DeepWiki_Logo]][DeepWiki_Repo]
 
 ## Code
 
