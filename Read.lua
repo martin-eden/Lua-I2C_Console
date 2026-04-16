@@ -5,8 +5,13 @@
   Last mod.: 2026-04-16
 ]]
 
+-- [[ Release
+require('workshop.base')
+--]]
+--[[ Dev
 package.path = package.path .. ';../../workshop/?.lua'
 require('base')
+--]]
 
 local <const> Config =
   {
