@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Verify data written to I2C device DS3231
+# Verify data written to I2C device DS3231 (id 104)
 
 #
 # Author: Martin Eden
