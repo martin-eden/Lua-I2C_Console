@@ -93,6 +93,7 @@ Sending 1000 bytes and then pausing for 1000 ms is not the same as
 sending 1000 bytes with pause 1 ms after each byte. Small chunks are
 preferred.
 
+Implementation does small delay when sending data items.
 
 ## See also
 
