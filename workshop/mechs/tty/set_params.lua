@@ -2,11 +2,11 @@
 
 --[[
   Author: Martin Eden
-  Last mod.: 2026-04-15
+  Last mod.: 2026-04-17
 ]]
 
 local ToString = request('!.concepts.Words.ToString')
-local RunCommand = request('!.mechs.run_command')
+local RunCommand = request('!.concepts.Shell.Execute')
 
 --[[
   Set baud rate and read timeout for TTY device given by name
