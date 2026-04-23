@@ -6,8 +6,12 @@
 
 Client for [I2C text console][me_I2C_Console] written in Lua for Linux.
 
-Here is command-line Lua scripts to Scan/Read/Write I2C bus.
-And client code in Lua 5.5.
+Underlying text protocol is compatible with [Itness][Itness] format,
+designed to be easy for parsing/compiling and still be readable/writable
+for human from another side of communication channel.
+
+Here is command-line Lua scripts to call Scan/Read/Write commands for I²C bus.
+And client side code in Lua 5.5.
 
 Code is self-sufficient, no additional Lua modules are required.
 
@@ -22,7 +26,7 @@ Code is self-sufficient, no additional Lua modules are required.
 
 * Hardware
   * Arduino Uno with `me_I2C_Console` firmware
-  * I2C devices connected to Arduino
+  * I²C devices connected to Arduino
   * USB connection to Arduino
 
 * Software
@@ -98,6 +102,7 @@ Implementation does small delay when sending data items.
 ## See also
 
 * [`me_I2C_Console`][me_I2C_Console] -- My I2C server firmware for ATmega328
+* [`Itness`][Itness] -- strings tree serialization format (mine too lol)
 * [`DS3231 GUI`][Ds3231_Gui] -- My old frontend project for I2C device
 * [`workshop`][workshop] -- My personal Lua framework
 * [My other projects][Contents]
@@ -110,6 +115,7 @@ Implementation does small delay when sending data items.
 [Implementation]: I2C_Client/
 
 [me_I2C_Console]: https://github.com/martin-eden/Embedded-me_I2C_Console
+[Itness]: https://github.com/martin-eden/Lua-Itness
 [Ds3231_Gui]: https://github.com/martin-eden/tekui_ds3231
 [workshop]: https://github.com/martin-eden/workshop
 [Contents]: https://github.com/martin-eden/contents
