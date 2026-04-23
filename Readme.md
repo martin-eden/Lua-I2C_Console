@@ -4,7 +4,7 @@
 
 (2026-04)
 
-Client for [I2C text console][me_I2C_Console] written in Lua for Linux.
+Client for [I²C text console][me_I2C_Console] written in Lua for Linux.
 
 Underlying text protocol is compatible with [Itness][Itness] format,
 designed to be easy for parsing/compiling and still be readable/writable
@@ -46,16 +46,16 @@ Clone repo / delete directory
 Each of these scripts opens device, runs one command and closes device.
 Device opening takes like 3.5 seconds.
 
-If you want to write on-line program to I2C device -- don't use
+If you want to write on-line program to I²C device -- don't use
 these command-line scripts. Open device as teletype stream and use
 module functions.
 
-### I2C protocol
+### I²C protocol
 
-I2C is transactions protocol with byte granularity.
+I²C is transactions protocol with byte granularity.
 Each transaction is either Read or Write.
 
-Communication protocols of real I2C devices are extensions of this.
+Communication protocols of real I²C devices are extensions of this.
 
 Different devices use different custom extensions. You'll need datasheet.
 
@@ -101,10 +101,10 @@ Implementation does small delay when sending data items.
 
 ## See also
 
-* [`me_I2C_Console`][me_I2C_Console] -- My I2C server firmware for ATmega328
+* [`me_I2C_Console`][me_I2C_Console] -- my I²C server firmware for ATmega328
 * [`Itness`][Itness] -- strings tree serialization format (mine too lol)
-* [`DS3231 GUI`][Ds3231_Gui] -- My old frontend project for I2C device
-* [`workshop`][workshop] -- My personal Lua framework
+* [`DS3231 GUI`][Ds3231_Gui] -- my old frontend project for I²C device
+* [`workshop`][workshop] -- my personal Lua framework
 * [My other projects][Contents]
 
 [DeepWiki_Logo]: https://deepwiki.com/badge.svg
