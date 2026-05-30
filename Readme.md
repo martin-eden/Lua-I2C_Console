@@ -53,7 +53,7 @@ module functions.
 ### I²C protocol
 
 I²C is transactions protocol with byte granularity.
-Each transaction is either Read or Write.
+Each transaction is Read or Write.
 
 Communication protocols of real I²C devices are extensions of this.
 
@@ -63,21 +63,14 @@ For example to read sixth byte from real-time clock DS3231
 (device id `104`) you do
 
   ```
-  I2C_Write 104 5 -- set read pointer to offset 5
-  I2C_Read 104 1 -- read one byte
+  I2C_Write 104 5 -- sets read pointer to offset 5
+  I2C_Read 104 1 -- reads one byte
   ```
 
 Similarly to set sixth byte to 10 you do
 
   ```
-  I2C_Write 104 5 10
-  ```
-
-or
-
-  ```
-  I2C_Write 104 5
-  I2C_Write 104 10
+  I2C_Write 104 5 10 -- sets read pointer to offset 5, writes byte 10
   ```
 
 ### Portability
