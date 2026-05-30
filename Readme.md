@@ -41,15 +41,6 @@ Clone repo / delete directory
 
 ## Notes
 
-### Don't reconnect to device in program
-
-Each of these scripts opens device, runs one command and closes device.
-Device opening takes like 3.5 seconds.
-
-If you want to write on-line program to I²C device -- don't use
-these command-line scripts. Open device as teletype stream and use
-module functions.
-
 ### I²C protocol
 
 I²C is transactions protocol with byte granularity.
@@ -72,6 +63,15 @@ Similarly to set sixth byte to 10 you do
   ```
   I2C_Write 104 5 10 -- sets read pointer to offset 5, writes byte 10
   ```
+
+### Don't reconnect to device in program
+
+Each of these scripts opens device, runs one command and closes device.
+Device opening takes like 3.5 seconds.
+
+If you want to write on-line program working with I²C device -- don't use
+these command-line scripts. Instead use existing source to open device as
+teletype stream and use Scan/Read/Write functions.
 
 ### Portability
 
